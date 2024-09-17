@@ -8,6 +8,12 @@ h1 {
     font-size: xx-large;
 }
 
+/* # top heading är fortfarande en h1, men heter även detta för att differentiera att den är lite extra särskild.*/
+#top-heading {
+    font-size: 40px;
+    color: blueviolet;
+}
+
 p {
     color: hotpink;
 }
@@ -24,7 +30,7 @@ h5 {
     color: hotpink;
 }
 
-/*a är ju länkarna då om du minns tihi*/
+/* a är ju länkarna då om du minns tihi*/
 a {
     color: hotpink;
 }
