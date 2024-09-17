@@ -44,3 +44,27 @@ blockquote {
     background-color: lightpink;
 
 }
+
+#ClickMeBitch {
+    size: xx-large;
+    color: lightseagreen;
+    border: none;
+    background-color: lightpink;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+
+.välkommen-hit {
+    background-color: lavenderblush;
+    padding: 20px;
+    width: 400 px;
+}
+
+.hela-kroppen-typ {
+    background-color: azure;
+    padding: 20px;
+}
