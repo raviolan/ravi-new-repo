@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: purple;
+    font-size: xx-large;
+}
+
+p {
+    color: hotpink;
+}
+
+h2 {
+    color: purple;
+}
+
+h3 {
+    color: hotpink;
+}
+
+h5 {
+    color: hotpink;
+}
+
+/*a är ju länkarna då om du minns tihi*/
+a {
+    color: hotpink;
+}
+
+form {
+    background-color: lightyellow;
+}
+
+blockquote {
+    color: greenyellow;
+    background-color: lightpink;
+
+}
+
+aside {
+    width: 40%;
+    padding-left: 0.5rem;
+    margin-left: 0.5rem;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-style: italic;
+    color: #29627e;
+}
+
+aside>p {
+    margin: 0.5rem;
+}
