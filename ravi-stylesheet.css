@@ -37,11 +37,15 @@ a {
 
 form {
     background-color: lightyellow;
+    border: dotted purple;
+    padding: 20px;
+    width: auto;
 }
 
 blockquote {
     color: greenyellow;
     background-color: lightpink;
+    display: inline;
 
 }
 
@@ -75,15 +79,192 @@ blockquote {
     width: 400 px;
 }
 
-.hela-kroppen-typ {
+.vibe {
+    background-color: hotpink;
+}
+
+.ravi-form-container {
+    display: flex;
+    align-items: flex-start;
+    /*ensures both form and image align to the top */
+    gap: 10px;
+    /* Reduces the space between the form and the image */
+    height: 100%;
+
+}
+
+.ravi-formulär {
+    flex: 1;
+    /*form takes up as much width as possible */
+    padding: 10px;
+    box-sizing: border-box;
+    /* Ensures padding is included in the width calculation */
+    margin: 0;
+    max-width: relative;
+    height: auto;
+    align-items: center;
+
+}
+
+.ravi-form-container img {
+    flex: 1;
+    max-width: 300px;
+    max-height: relative;
+    object-fit: cover;
+    height: 100%;
+    margin: 0;
+}
+
+.ravi-formulär textarea {
+    width: relative;
+    height: 180 px;
+    resize: none;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+.ravi-formulär input,
+.ravi-formulär select {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 5px 0;
+}
+
+.ravi-formulär fieldset {
+    padding: 0;
+    margin: 0;
+    border: none;
+    /* Optional */
+}
+
+.ravi-formulär h3,
+.ravi-formulär h5 {
+    margin: 5px 0;
+}
+
+
+
+.footer-lol {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: azure;
     padding: 20px;
 }
 
-.hela-kroppen-typ img {
+.footer-lol img {
     width: 10%;
 }
 
-.vibe {
-    background-color: hotpink;
+.footer-logo {
+    border-radius: 50%;
+    /* detta gör bilden på loggan rund tihi */
+}
+
+.footer-content {
+    max-width: 70%;
+}
+
+.house-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.css-house {
+    position: relative;
+    width: 200px;
+    height: 150px;
+}
+
+.roof {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 50px solid hotpink;
+    position: absolute;
+    top: 0;
+
+}
+
+.walls {
+    width: 100%;
+    height: 100px;
+    background-color: silver;
+    position: absolute;
+    bottom: 0;
+}
+
+.door {
+    width: 50px;
+    height: 70px;
+    background-color: #C8A2C8;
+    /* Lilac */
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.window {
+    width: 40px;
+    height: 40px;
+    background-color: lightblue;
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    overflow: hidden;
+    /* Ensures the image doesn't overflow*/
+}
+
+.window-image {
+    width: 100%;
+    height: 100%;
+    display: none;
+    /* Hide image by default*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.window:hover .window-image {
+    display: block;
+    /* Show the image on hover*/
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.window-right {
+    width: 40px;
+    height: 40px;
+    background-color: lightblue;
+    position: absolute;
+    top: 70px;
+    left: 140px;
+    overflow: hidden;
+    /* Ensures the image doesn't overflow*/
+}
+
+.window-image-right {
+    width: 100%;
+    height: 100%;
+    display: none;
+    /* Hide image by default*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.window-right:hover .window-image-right {
+    display: block;
+    /* Show the image on hover*/
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
 }
