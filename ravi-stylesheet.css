@@ -48,14 +48,25 @@ blockquote {
 #ClickMeBitch {
     size: xx-large;
     color: lightseagreen;
-    border: none;
     background-color: lightpink;
-    padding: 20px;
+    padding: 15px 25px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+#ClickMeBitch:hover {
+    background-color: purple
+}
+
+#ClickMeBitch:active {
+    background-color: lightseagreen;
+    color: lightpink;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }
 
 .välkommen-hit {

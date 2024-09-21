@@ -5,7 +5,7 @@ document.getElementById("ClickMeBitch").onclick
     }
 
 function vibePrompt() {
-    let result = window.prompt("what's the vibe", "vibe");
+    let result = window.prompt("what's the vibe", "vibe??");
     let text;
 
     if (result === null) {
