@@ -35,19 +35,14 @@ a {
     color: hotpink;
 }
 
-form {
-    background-color: lightyellow;
-    border: dotted purple;
-    padding: 20px;
-    width: auto;
-}
-
 blockquote {
     color: greenyellow;
     background-color: lightpink;
     display: inline;
 
 }
+
+/* ------------------ Top Styles ------------------------------------------------------------------------------------------------------------ */
 
 #ClickMeBitch {
     size: xx-large;
@@ -81,6 +76,14 @@ blockquote {
 
 .vibe {
     background-color: hotpink;
+}
+
+/* ------------------ Formulär Styles ------------------------------------------------------------------------------------------------------------ */
+form {
+    background-color: lightyellow;
+    border: dotted purple;
+    padding: 20px;
+    width: auto;
 }
 
 .ravi-form-container {
@@ -143,7 +146,7 @@ blockquote {
 }
 
 
-
+/* ------------------ Footer Styles ------------------------------------------------------------------------------------------------------------ */
 .footer-lol {
     display: flex;
     justify-content: space-between;
@@ -165,6 +168,7 @@ blockquote {
     max-width: 70%;
 }
 
+/* ------------------ House Styles ------------------------------------------------------------------------------------------------------------ */
 .house-container {
     display: flex;
     justify-content: center;
@@ -213,16 +217,15 @@ blockquote {
     background-color: lightblue;
     position: absolute;
     top: 70px;
-    left: 20px;
     overflow: hidden;
-    /* Ensures the image doesn't overflow*/
+    /* Ensures the image doesn't overflow */
 }
 
 .window-image {
     width: 100%;
     height: 100%;
     display: none;
-    /* Hide image by default*/
+    /* Hide image by default */
     position: absolute;
     top: 0;
     left: 0;
@@ -231,40 +234,13 @@ blockquote {
 
 .window:hover .window-image {
     display: block;
-    /* Show the image on hover*/
+    /* Show the image on hover */
     width: auto;
     height: auto;
     max-width: 100%;
     max-height: 100%;
 }
 
-.window-right {
-    width: 40px;
-    height: 40px;
-    background-color: lightblue;
-    position: absolute;
-    top: 70px;
-    left: 140px;
-    overflow: hidden;
-    /* Ensures the image doesn't overflow*/
-}
+/* Other house styles remain the same */
 
-.window-image-right {
-    width: 100%;
-    height: 100%;
-    display: none;
-    /* Hide image by default*/
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-}
-
-.window-right:hover .window-image-right {
-    display: block;
-    /* Show the image on hover*/
-    width: auto;
-    height: auto;
-    max-width: 100%;
-    max-height: 100%;
-}
+/* ------------------ New section ------------------------------------------------------------------------------------------------------------ */
