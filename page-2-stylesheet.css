@@ -13,12 +13,92 @@ h1 {
     margin: 10px;
 }
 
+
+.spinning-banner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: clamp(3em, 10vw, 6em);
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.marquee-text {
+
+    position: absolute;
+    font-size: clamp(1rem, 2.5w, 2rem);
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    white-space: nowrap;
+    animation: marquee 7s infinite linear;
+    animation-iteration-count: infinite;
+    margin-top: -0.5em;
+    /* Adjust this value to nudge text upward */
+
+
+}
+
 img {
     width: 90%;
     height: 90%;
     justify-content: center;
     margin: 20px;
 }
+
+
+.flex-parent {
+    border: 2px solid blue;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+}
+
+.flex-child {
+    margin: 5px;
+    width: 100px;
+    height: 40px;
+    background: inherit;
+    clip-path: polygon(0% 100%, 25% 80%, 50% 100%, 75% 80%, 100% 100%, 100% 0%, 0% 0%);
+    /* This creates wave-like curves */
+}
+
+.hotpink {
+    background: hotpink;
+
+}
+
+.aliceblue {
+    background: aliceblue;
+}
+
+.lime {
+    background: lime;
+}
+
+.orange {
+    background: orange;
+}
+
+
+
+
+
+@keyframes marquee {
+
+    0% {
+        left: 70%;
+        transform: translateX(0)
+    }
+
+    100% {
+        left: 0;
+        transform: translateX(-100%);
+    }
+
+}
+
 
 /* Use media queries to adjust for larger screens */
 @media (min-width: 768px) {
@@ -52,10 +132,10 @@ img {
     body {
         font-size: 20px;
         background: lightblue;
-    }
 
-    h1 {
-        color: navajowhite;
+        h1 {
+            color: navajowhite;
+        }
     }
 
     .container {
@@ -65,8 +145,29 @@ img {
         display: flex;
         /* Set the container as flex to manage the content */
 
+        flex-direction: column;
+        /* Default to column for smaller screens*/
+
         justify-content: center;
         /* Center the entire content */
+
+        wrap: wrap;
+    }
+
+    .marquee-text {
+
+        position: absolute;
+        font-size: clamp(1rem, 2.5w, 2rem);
+        font-family: sans-serif;
+        text-transform: uppercase;
+        font-weight: 700;
+        white-space: nowrap;
+        animation: marquee 7s infinite linear;
+        animation-iteration-count: infinite;
+        margin-top: +0.5em;
+        /* Adjust this value to nudge text upward */
+
+
     }
 
     /* Flexbox styles for centering the images */
@@ -94,12 +195,11 @@ img {
     }
 
     img {
-        width: calc(25% - 7.5px);
+        width: calc(25% - 10px);
         /* Each image takes up 25% of the container minus spacing*/
 
         max-width: 100%;
         /* Images will never exceed the container width */
-
 
         height: auto;
         /* Maintain aspect ratio */
@@ -109,6 +209,20 @@ img {
 
         flex-grow: 0;
         /* Prevent images from growing */
+    }
+
+    .flex-parent {
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .flex-child {
+        flex-grow: 1;
+        width: auto;
+        height: 100px;
+        min-width: 150px;
+        margin: 10px;
     }
 
 }

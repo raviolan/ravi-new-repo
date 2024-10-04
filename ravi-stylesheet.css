@@ -209,6 +209,68 @@ form {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    overflow: hidden;
+    text-decoration: none;
+    /* Remove underline from link */
+}
+
+.door-image {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.door-text {
+    display: none;
+    /* Hide text by default */
+
+    position: absolute;
+    /* Position it next to the image */
+
+    top: 50%;
+    /* Adjust as needed */
+
+    left: 110%;
+    /* Position it next to the image */
+
+    transform: translateY(-50%);
+    /* Adjust vertical alignment*/
+
+    background-color: rgba(255, 255, 255, 0.8);
+    /* White background with transparency */
+
+    padding: 5px;
+    /* Add some padding */
+
+    border: 1px solid #C8A2C8;
+    /* Optional border color */
+
+    border-radius: 50%;
+    /* Optional rounded corners */
+
+    white-space: nowrap;
+    /* Prevent text from wrapping */
+}
+
+.door:hover .door-image {
+    display: block;
+    /* Show the image on hover */
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+}
+
+
+.door:hover .door-text {
+    display: block;
+    /* Show the text on hover */
 }
 
 .window {
