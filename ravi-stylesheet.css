@@ -162,10 +162,31 @@ form {
 .footer-logo {
     border-radius: 50%;
     /* detta gör bilden på loggan rund tihi */
+    animation: rotate 2s linear infinite;
 }
 
 .footer-content {
     max-width: 70%;
+}
+
+@keyframes reverse {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 /* ------------------ House Styles ------------------------------------------------------------------------------------------------------------ */

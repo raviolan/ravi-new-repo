@@ -1,4 +1,4 @@
-/* Default styles for mobile */
+/* -------------------------------------------- Default styles for mobile -------------------------------------------- */
 body {
     font-size: 16px;
     padding: 10px;
@@ -84,7 +84,7 @@ img {
 
 
 
-
+/*-------------------------------------------- Marquee animation for text banner --------------------------------------------*/
 @keyframes marquee {
 
     0% {
@@ -99,8 +99,53 @@ img {
 
 }
 
+/* ------------------------- Footer with spinning logo --------------------------------------------*/
 
-/* Use media queries to adjust for larger screens */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer-logo {
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ravi-snurrar {
+    width: 10%;
+    display: flex;
+    animation: rotate 2s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@keyframes reverse {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* -------------------------------------------- Use media queries to adjust for larger screens --------------------------------------------*/
 @media (min-width: 768px) {
 
     /* Styles for tablets and larger devices */
@@ -224,5 +269,6 @@ img {
         min-width: 150px;
         margin: 10px;
     }
+
 
 }
