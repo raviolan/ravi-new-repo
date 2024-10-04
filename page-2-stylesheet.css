@@ -1,0 +1,114 @@
+/* Default styles for mobile */
+body {
+    font-size: 16px;
+    padding: 10px;
+}
+
+h1 {
+    color: hotpink;
+}
+
+.container {
+    background-color: lightblue;
+    margin: 10px;
+}
+
+img {
+    width: 90%;
+    height: 90%;
+    justify-content: center;
+    margin: 20px;
+}
+
+/* Use media queries to adjust for larger screens */
+@media (min-width: 768px) {
+
+    /* Styles for tablets and larger devices */
+    body {
+        font-size: 18px;
+        flex-direction: row;
+        justify-content: center;
+        background: pink;
+        flex-wrap: wrap;
+    }
+
+    h1 {
+        color: aliceblue;
+    }
+
+    .container {
+        background-color: lightgreen;
+        margin: 20px;
+    }
+
+    img {
+        width: 40%;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    /* Styles for desktops */
+    body {
+        font-size: 20px;
+        background: lightblue;
+    }
+
+    h1 {
+        color: navajowhite;
+    }
+
+    .container {
+        background-color: lightcoral;
+        margin: 30px;
+
+        display: flex;
+        /* Set the container as flex to manage the content */
+
+        justify-content: center;
+        /* Center the entire content */
+    }
+
+    /* Flexbox styles for centering the images */
+    .image-container {
+        display: flex;
+        /* Enable flexbox */
+
+        justify-content: center;
+        /* Center images horizontally */
+
+        align-items: center;
+        /* Center images vertically, if needed */
+
+        gap: 10px;
+        /* Add space between images*/
+
+        width: 100%;
+        /* Ensure the container takes the full width */
+
+        max-width: 1200px;
+        /* Limit the width so it doesn't stretch too wide. */
+
+        flex-wrap: nowrap;
+        /* Allow wrapping, in case the images overflow */
+    }
+
+    img {
+        width: calc(25% - 7.5px);
+        /* Each image takes up 25% of the container minus spacing*/
+
+        max-width: 100%;
+        /* Images will never exceed the container width */
+
+
+        height: auto;
+        /* Maintain aspect ratio */
+
+        flex-shrink: 0;
+        /* Prevent images from shrinking */
+
+        flex-grow: 0;
+        /* Prevent images from growing */
+    }
+
+}
