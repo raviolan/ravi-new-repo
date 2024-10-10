@@ -1,0 +1,52 @@
+/* General styling for header */
+
+
+
+/* Use the Newsreader font for the header title */
+.header-title h1 {
+    display: flex;
+    text-wrap: nowrap;
+    justify-self: center;
+    align-self: center;
+    font-family: 'Newsreader', serif;
+    font-size: 2rem;
+    margin: 0;
+
+}
+
+.grid-header {
+    display: grid;
+    grid-template-columns: 100px 1fr auto;
+    /* Adjust columns for logo, title, and nav */
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    /* Dark background */
+    padding: 10px;
+    color: black;
+    /* Text color */
+}
+
+.nav-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    /* Space between links */
+}
+
+.nav-links ul li {
+    margin: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+    /* Underline on hover */
+}
