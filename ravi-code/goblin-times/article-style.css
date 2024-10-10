@@ -8,6 +8,7 @@
     justify-content: center;
     padding: 10px;
     color: black;
+    text-wrap: nowrap;
     /*Text color*/
     background-color: palegreen;
     /*background color for debugging*/
@@ -17,7 +18,7 @@
 /* Use the Newsreader font for the header title */
 .header-title h1 {
     font-family: 'Newsreader', serif;
-    font-size: 2rem;
+    font-size: 3rem;
     margin: 0;
     text-align: center;
 
@@ -48,14 +49,21 @@
     /* Underline on hover */
 }
 
+/* ---------------------------------MAIN CONTENT GRID------------------------------------------------*/
+.content-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /*2 columns for main article and 1 for sidebar. */
+    gap: 20px;
+    padding: 20px;
+}
+
 /* ---------------------------------CONTENT------------------------------------------------*/
 .main-article {
-    display: grid;
-    grid-template-columns: 1fr;
-    /*Single column layout*/
-    background-color: pink;
-    /*background color for debugging*/
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    padding: 50px;
 }
 
 
@@ -69,27 +77,21 @@
 
 /* Article text styling*/
 h1,
-h2,
-h3 {
+h2 {
     font-family: 'Newsreader', serif;
     /*Use Newsreader font for all Hs*/
 }
 
 .h1 {
-    font-size: 2.5rem;
+    font-size: large;
     margin-bottom: 20px;
 }
 
 .h2 {
-    font-size: 2rem;
-    margin-bottom: 15px;
+    font-size: medium;
+    /* margin-bottom: 15px; */
 }
 
-.h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-
-}
 
 .quote {
     font-family: serif;
@@ -108,4 +110,42 @@ h3 {
     margin-top: 10px;
     /* Space above the body text */
 
+}
+
+/* ---------------------------------SIDEBAR-------------------------------------------*/
+.sidebar {
+    background-color: lightgray;
+    /* Color for the sidebar */
+    padding: 20px;
+    width: 400px;
+    /* Set a fixed width */
+    position: sticky;
+    /* Fix position on the page */
+    align-self: flex-start;
+    top: 120px;
+    /* Adjust based on header height */
+}
+
+.sidebar h2 {
+    font-family: 'Newsreader', serif;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+    /* Space between items */
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: black;
+    /* Change color for sidebar links */
+}
+
+.sticky-ad {
+    width: 400px;
 }
