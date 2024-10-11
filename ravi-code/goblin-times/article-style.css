@@ -11,8 +11,6 @@
     /* Adjust columns for logo, title, and nav */
     align-items: center;
     padding: 10px;
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
     text-align: center;
 
 }
@@ -20,6 +18,11 @@
 .header-lines {
     text-align: center;
     position: relative;
+
+}
+
+.divider-line {
+    display: flex;
 
 }
 
@@ -127,7 +130,7 @@
 }
 
 .article-bottomline {
-    width: auto%;
+    width: auto;
     height: 2px;
     background-color: #7a7979;
     margin: 10px 0;
@@ -136,7 +139,8 @@
 
 /* Article image styling */
 .article-image {
-    width: 100%;
+    place-self: center;
+    width: 80%;
     /* Full width */
     height: auto;
     /* Maintain aspect ratio */
@@ -147,7 +151,14 @@ h1,
 h2 {
     font-family: 'Newsreader', serif;
     /*Use Newsreader font for all Hs*/
+}
+
+.h1 {
     font-size: 50px;
+}
+
+.h2 {
+    font-size: 34px;
 }
 
 
@@ -204,25 +215,25 @@ h2 {
     /* Change color for sidebar links */
 }
 
-.related-stories {
+.related-story-item {
     display: flex;
-    flex-direction: column;
-    background-color: pink;
-    padding: 10px;
-
-    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 15px;
 }
 
-.related-stories img {
+.related-story-item img {
     width: 20%;
+    margin-right: 10px;
 }
 
-.sticky-ad {
-    width: 350px;
-    background-color: none;
+.related-story-item li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-.latest-news-links :hover {
-    color: darkgreen;
-    font-style: italic;
+.sidebar-ads img {
+    display: block;
+    width: 70%;
+    margin: 20px auto;
 }
