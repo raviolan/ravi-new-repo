@@ -17,29 +17,43 @@
 <body>
     <!-----------------header section----------------->
     <header class="grid-header">
-        <section class="goblin-times-header">
-            <div class="grid-item header-image">
-                <img src="" alt="" class="header-logo">
-            </div>
-            <div class="grid-item header-title">
-                <h1>The Goblin Times</h1>
-            </div>
-            <nav class="" grid-item nav-links>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+        <div class="header-title">
+            <h1>The Goblin Times</h1>
+        </div>
+        <nav class="grid-item nav-links">
+            <ul>
+                <li><a href="goblin-index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
         </section>
+        <div class="divider-line"></div>
+        <!-- Date Field -->
+        <div id="current-date" class="current-date"></div>
     </header>
     <!-----------------section----------------->
     <section class="articles">
         <div class="top-story"> <a href="mordforsok-pa-drottning.html">Mordförsök på Goblindrottning</a></div>
-        <div class="temple-story">Allt färre donerar till Tempel</div>
+        <div class="temple-story"> <a href="allt-farre-donerar.html">Allt färre donerar till tempel</a> </div>
+        <div class="skurbudget-story"> <a href="">Minskad Skurbudget – 3 städkuber varslas</a>
+            <div class="ölstöld-i-lager"> <a href="">Ölstöld i lager gäckar myndigheter</a>
+            </div>
     </section>
     <!-----------------section----------------->
-    <!-----------------section----------------->
+    <!-----------------script section----------------->
+    <script>
+        // Function to get today's date
+        function updateDate() {
+            const today = new Date(); // Get current date
+            const options = { year: 'numeric', month: 'long', day: 'numeric' }; // Format options
+            const dateString = today.toLocaleDateString('en-US', options); // Format date to a string
+            document.getElementById('current-date').textContent = dateString; // Update the content of the date div
+        }
+
+        // Call the function to set the date on page load
+        updateDate();
+    </script>
 
 </body>
 

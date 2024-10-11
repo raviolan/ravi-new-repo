@@ -1,35 +1,77 @@
 /* ---------------------------------HEADER GENERAL------------------------------------------------*/
+@font-face {
+    font-family: chomsky;
+    src: url('fonts/Chomsky.otf');
+    font-weight: bold;
+}
 
 .grid-header {
     display: grid;
-    grid-template-columns: 100px 1fr auto;
+    grid-template-columns: auto 1fr auto;
     /* Adjust columns for logo, title, and nav */
     align-items: center;
-    justify-content: center;
     padding: 10px;
-    color: black;
-    text-wrap: nowrap;
-    /*Text color*/
-    background-color: palegreen;
-    /*background color for debugging*/
-}
-
-
-/* Use the Newsreader font for the header title */
-.header-title h1 {
-    font-family: 'Newsreader', serif;
-    font-size: 3rem;
-    margin: 0;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
     text-align: center;
 
 }
 
+.header-lines {
+    text-align: center;
+    position: relative;
+
+}
+
+/* Center the title between logo and nav */
+.header-title {
+    text-align: center;
+    justify-self: center;
+    /* Ensures the title is centered in the grid */
+    grid-column: 1/-1;
+    /* Make the title span all columns*/
+
+}
+
+/* Use the Newsreader font for the header title */
+.header-title h1 {
+    font-family: 'Chomsky';
+    font-size: 3rem;
+    margin: 0;
+    /* Font smoothing */
+
+}
+
+.current-date {
+    text-align: center;
+    /* Center the date text */
+    font-size: 1.2rem;
+    /* Change font size as needed */
+    margin-top: 10px;
+    /* Space above the date */
+}
+
+.divider-line {
+    width: auto%;
+    height: 2px;
+    background-color: black;
+    margin: 10px 0;
+
+}
+
 /* ---------------------------------NAV BAR------------------------------------------------*/
+.nav-links {
+
+    text-align: center;
+    grid-column: 1/-1;
+}
+
 .nav-links ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: center;
     gap: 20px;
     /* Space between links */
 }
@@ -39,7 +81,7 @@
 }
 
 .nav-links a {
-    color: white;
+    color: black;
     text-decoration: none;
     font-size: 1.2rem;
 }
@@ -62,10 +104,35 @@
 .main-article {
     display: flex;
     flex-direction: column;
-    background-color: lightgray;
-    padding: 50px;
+    background-color: #f7f7f7;
+    padding: 30px;
 }
 
+.article-topline {
+    width: auto%;
+    height: 2px;
+    background-color: #7a7979;
+    margin: 10px 0;
+
+}
+
+.article-tags-container {
+    display: flex;
+    justify-content: space-between;
+    color: #7a7979;
+}
+
+.article-tags {
+    font-family: Newsreader;
+}
+
+.article-bottomline {
+    width: auto%;
+    height: 2px;
+    background-color: #7a7979;
+    margin: 10px 0;
+
+}
 
 /* Article image styling */
 .article-image {
@@ -80,17 +147,9 @@ h1,
 h2 {
     font-family: 'Newsreader', serif;
     /*Use Newsreader font for all Hs*/
+    font-size: 50px;
 }
 
-.h1 {
-    font-size: large;
-    margin-bottom: 20px;
-}
-
-.h2 {
-    font-size: medium;
-    /* margin-bottom: 15px; */
-}
 
 
 .quote {
@@ -98,7 +157,7 @@ h2 {
     font-style: italic;
     margin: 20px 0;
     padding-left: 10px;
-    border-left: 3px solid gray;
+    border-left: 3px solid #e1e5eb;
     /* Nice quote styling */
 }
 
@@ -114,16 +173,15 @@ h2 {
 
 /* ---------------------------------SIDEBAR-------------------------------------------*/
 .sidebar {
-    background-color: lightgray;
+    background-color: #f7f7f7;
     /* Color for the sidebar */
     padding: 20px;
-    width: 400px;
-    /* Set a fixed width */
     position: sticky;
     /* Fix position on the page */
     align-self: flex-start;
     top: 120px;
     /* Adjust based on header height */
+    left: 120px;
 }
 
 .sidebar h2 {
@@ -146,6 +204,25 @@ h2 {
     /* Change color for sidebar links */
 }
 
+.related-stories {
+    display: flex;
+    flex-direction: column;
+    background-color: pink;
+    padding: 10px;
+
+    justify-content: space-evenly;
+}
+
+.related-stories img {
+    width: 20%;
+}
+
 .sticky-ad {
-    width: 400px;
+    width: 350px;
+    background-color: none;
+}
+
+.latest-news-links :hover {
+    color: darkgreen;
+    font-style: italic;
 }
