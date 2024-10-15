@@ -222,9 +222,17 @@ h2 {
 }
 
 .related-story-item img {
-    width: 20%;
+    display: flex;
+    width: 70px;
     margin-right: 10px;
+    height: 70px;
+    /* Set the desired height */
+    object-fit: cover;
+    /* Cover the entire area and crop */
+    justify-self: flex-start;
+    /* Center the image */
 }
+
 
 .related-story-item li {
     list-style: none;

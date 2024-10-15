@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mordförsök på Goblindrottning</title>
+    <title>Allt färre donerar till tempel</title>
     <link rel="stylesheet" href="article-style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,9 +16,7 @@
 <body>
     <!-----------------header section----------------->
     <header class="grid-header">
-        <div class="grid-item header-image">
-            <img src="" alt="" class="header-logo">
-        </div>
+        <div class="divider-line"></div>
         <div class="header-title">
             <h1>The Goblin Times</h1>
         </div>
@@ -29,43 +27,51 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <div class="divider-line"></div>
         </section>
     </header>
+    <div class="divider-line"></div>
+    <!-- Date Field -->
+    <div id="current-date" class="current-date"></div>
+    <div class="divider-line"></div>
     <!----------------- main content section----------------->
     <main class="content-grid">
         <!----------------- article section----------------->
         <section class="main-article">
+            <div class="article-topline"></div>
+            <div class="article-tags-container">
+                <div class="article-tags tag-1">Waterdeep</div>
+                <div class="article-tags tag-1">Soldyrkan</div>
+                <div class="article-tags tag-published">Publicerad: Datum</div>
+            </div>
+            <div class="article-bottomline"></div>
             <h1>Allt färre donerar till tempel</h1>
-            <!--  <img src="images/goblin-queen.png" alt="Goblindrottningen blev attackerad i bazaaren."
-                class="article-image">-->
+            <img src="images/temple-donation.png" alt="Soltemplet värst drabbat." class="article-image">
 
             <div class="body-text">
                 <p>
                     <strong>Soldyrkan. </strong>Att bedriva religös verksamhet kan
                     bli en dyr historia. Så verkar åtminstone fallet
-                    vara för Soltemplet i Waterdeep. Under de sena-
-                    ste åren har Församlingen Solens Psykopatiska
-                    Vänner haft skenande utgifter. Tack vare regel-
-                    bundna donationer från en anonym givare har
-                    verksamheten hållit sig flytande - men sedan en
+                    vara för Soltemplet i Waterdeep. Under de senaste åren har Församlingen Solens Psykopatiska
+                    Vänner haft skenande utgifter. Tack vare regelbundna donationer från en anonym givare har
+                    verksamheten hållit sig flytande – men sedan en
                     tid tillbaka har donationerna upphört helt och
-                    hållet.
+                    hållet. <br><br>
                     ”Vi har ingen aning varför pengarna har
                     slutat rulla in”, säger en representant för templet.
                     Den sviktande ekonomin för församlingen
                     följer en större makroekonomisk trend som pekar
                     på att allt färre väljer att donera sitt silver och
                     guld till religiösa tempel. Särskilt drabbade är
-                    tempel med inriktningen soldyrkan.
+                    tempel med inriktningen soldyrkan. <br><br>
                     ”Vi önskar att fler skulle förstå och ta till sig
                     solens budskap om fred på jorden och vikten av
                     kärlek till samhällets allra svagaste och fattigaste”,
-                    säger samma representant för Soltemplet i Water-
-                    deep. ”Vi ser över våra interna rutiner och policy-
-                    dokument för att undersöka om det finns någonting
+                    säger samma representant för Soltemplet i Waterdeep. ”Vi ser över våra interna rutiner och
+                    policydokument för att undersöka om det finns någonting
                     vi kan göra för att både locka fler besökare och
                     öka våra intäkter. Vi måste agera för att vara i
-                    ajour med samtiden”.
+                    ajour med samtiden”. <br><br>
                     I en enkätundersökning från förra året, där
                     5 goblins i åldrarna 25-55 svarade på frågan om
                     vilken religion de anser vara töntigast i hela
@@ -73,29 +79,60 @@
                     töntigast.
                     Nyligen fick Soltemplet i Waterdeep avslag på
                     sin bygglovsansökan om att öppna ytterligare ett
-                    tempel nere i Katakomberna. Skullports religions-
-                    förvaltning handlägger just nu ett liknande ärende.
-                    Huruvida Församlingen Solens Psykopatiska Vän-
-                    ner kommer ha råd att påbörja sina byggplaner om
+                    tempel nere i Katakomberna. Skullports religionsförvaltning handlägger just nu ett liknande ärende.
+                    Huruvida Församlingen Solens Psykopatiska Vänner kommer ha råd att påbörja sina byggplaner om
                     ansökan godkänns återstår att se.
 
 
                 </p>
             </div>
         </section>
-        <!-----------------sidebar section----------------->
+        <!---------------------------------sidebar section----------------->
         <aside class="sidebar">
-            <h2>Latest News</h2>
-            <ul>
-                <li><a href="#">News Item 1</a></li>
-                <li><a href="#">News Item 2</a></li>
-                <li><a href="#">News Item 3</a></li>
-            </ul>
-            <aside class="sidebar-ads">
-                <img class="sticky-ad" src="images/alv-edon 2.png" alt="alv-edon">
-            </aside>
+            <section class="related-news">
+                <h2>Latest News</h2>
+                <ul>
+
+                    <div class="related-story-item">
+                        <img src="images/goblin-queen.png" alt="Soldyrkare hårdast drabbade">
+                        <li><a href="mordforsok-pa-drottning.html">Mordförsök på Goblindrottning</a></li>
+                    </div>
+                    <!-- Divider Line -->
+                    <div class="divider-line"></div>
+                    <div class="related-story-item">
+                        <img src="images/undermountain-beer.png" alt="">
+                        <li><a href="olstold-i-lager.html">Ölstöld i lager gäckar myndigheter</a></li>
+                    </div>
+                    <!-- Divider Line -->
+                    <div class="divider-line"></div>
+                    <div class="related-story-item">
+                        <img src="images/barbarian.webp" alt="">
+                        <li><a href="#">Minskad skurbudget - 3 städkuber varslas</a></li>
+                    </div>
+                    <!-- Divider Line -->
+                    <div class="divider-line"></div>
+                </ul>
+                <div class="sidebar-ads">
+                    <img src="images/alv-edon 2.png" alt="alv-edon">
+                </div>
+            </section>
         </aside>
     </main>
+    <!-----------------script section----------------->
+    <script>
+        // Function to get today's date
+        function updateDate() {
+            const today = new Date(); // Get current date
+            const options = { year: 'numeric', month: 'long', day: 'numeric' }; // Format options
+            const dateString = today.toLocaleDateString('en-US', options); // Format date to a string
+            document.getElementById('current-date').textContent = dateString; // Update the content of the date div
+        }
+
+        // Call the function to set the date on page load
+        updateDate();
+
+
+    </script>
 </body>
 
 </html>
